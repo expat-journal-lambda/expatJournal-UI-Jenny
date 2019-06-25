@@ -322,27 +322,3 @@ img {
     margin: 0 auto 30px;
   }
 }
-.home .content-pick .destination .btn {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 45px;
-  background-color: #17a2b8;
-  color: #ffffff;
-  border: 1px solid #c0c0c0;
-  cursor: pointer;
-  font-size: 1.8rem;
-}
-@media (max-width: 500px) {
-  .home .content-pick .destination .btn {
-    width: 100%;
-  }
-}
-.home .content-pick .destination .btn:hover {
-  background: #ffffff;
-  color: #17a2b8;
-}
