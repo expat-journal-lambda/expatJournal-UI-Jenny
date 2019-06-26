@@ -222,6 +222,9 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.main-picture {
+  width: 100vw;
+}
 .home .intro {
   padding: 90px 0 10px;
   border-bottom: 2px dashed #c0c0c0;
@@ -246,7 +249,7 @@ img {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
-    padding: 0;
+    padding: 0%;
   }
 }
 .home .content-section .img-content {
@@ -256,7 +259,7 @@ img {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
-    padding: 0;
+    padding: 0%;
   }
 }
 .home .content-section .img-content img {
@@ -321,4 +324,28 @@ img {
     width: 80%;
     margin: 0 auto 30px;
   }
+}
+.home .content-pick .destination .btn {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 45px;
+  background-color: #17a2b8;
+  color: #ffffff;
+  border: 1px solid #c0c0c0;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
+}
+.home .content-pick .destination .btn:hover {
+  background: #ffffff;
+  color: #17a2b8;
 }
