@@ -1,84 +1,127 @@
-<!DOCTYPE html>
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-
+<html>
+   <head>
     <title>Expat Journal</title>
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="./favicon.ico" />
+    <!-- <link rel="stylesheet" type="text/css" href="./CSS/index.css" /> -->
     <link href="css/index.css" rel="stylesheet" />
-
-    <script src="js/index.js" async></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="components/Tabs.js" async></script> -->
+   
   </head>
+ 
 
   <body>
+    <!-- TOP BAR COMPONENT --> 
+
     <header class="main-navigation">
-      <div class="container nav-container">
-        <h1 class="logo-heading">Expat Journal</h1>
-        <nav class="nav">
-          <a class="nav-link" href="#">Home</a>
-          <a class="nav-link" href="#">Team</a>
-        </nav>
-      </div>
-    </header>
-
-    <div class="container home">
-      <header class="intro">
-        <img src="img/IMG_2154.jpg" alt="Erin" />
-        <h2>Team Lead</h2>
-        <p>
-          Erin Koen
-        </p>
+        <div class="container nav-container">
+          <h1 class="logo-heading">Expat Journal</h1>
+          <nav class="nav">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Team</a>
+            <a class="login-link" href="#">Log in</a>
+          </nav>
+        </div>
       </header>
-      <section class="content-section">
-        <div class="text-content">
-          <h2>UI</h2>
-          <p>
-            Jenny Li
-          </p>
-          <p>
-            Preston Middleton
-          </p>
-          <p>
-            Chris Ian Jones
-          </p>
-        </div>
-        <div class="img-content">
-          <img src="img/IMG_2155.jpg" alt="Jenny" />
-          <img src="img/IMG_2151.jpg" alt="Preston" />
-          <img src="img/IMG_2149.jpg" alt="Chris" />
-        </div>
-      </section>
-      <section class="content-section inverse-content">
-        <div class="img-content">
-          <img src="img/IMG_2152.jpg" class="img-fluid rounded" alt="Melvine " />
-        </div>
-        <div class="text-content">
-          <h2>Front-end</h2>
-          <p>
-            Awa Melvine
-          </p>
-        </div>
-      </section>
-      <section class="content-section inverse-content">
-        <div class="img-content">
-          <img src="img/IMG_2153.jpg" class="img-fluid rounded" alt=" " />
-        </div>
-        <div class="text-content">
-          <h2>Back-end</h2>
-          <p>
-            Anthony Stachowitz
-          </p>
-        </div>
-      </section>
-     
+  
+      <img class="main-picture" src="img/IMG_1863.jpg" alt="Death-valley" />
 
-    <footer class="footer">
-      <p>Copyright Expat Journal 2019</p>
-    </footer>
+    <!-- TABS COMPONENT -->
+    <div class="tabs">
+      <div class="topics">
+        <span class="title">Meet the Team:</span>
+        <div data-tab="all" class="tab active-tab">ALL</div>
+        <div data-tab="team-lead" class="tab">Team Lead</div>
+        <div data-tab="user-interface-developer" class="tab">User Interface Developer</div>
+        <div data-tab="frontend-architect" class="tab">Frontend Architect</div>
+        <div data-tab="backend-architect" class="tab">Backend Architect</div>
+      </div>
+    </div>
+
+    <!-- CARDS COMPONENT -->
+    <div class="cards-container">
+      <!-- CARD COMPONENTS -->
+      <div class="card" data-tab="team-lead">
+        <div class="headline">
+        Erin Koen
+        </div>
+        <div class="author">
+          <div class="img-container">
+            <img src="img/IMG_2154.JPG" />
+          </div>
+          <span>Team Lead</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="user-interface-developer">
+        <div class="headline">
+         Chris Ian Jones 
+        </div>
+        <div class="author">
+          <div class="img-container">
+            <img src="img/IMG_2149.JPG" />
+          </div>
+          <span> User Interface Developer </span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="user-interface-developer">
+        <div class="headline">
+          Jenny Li
+        </div>
+        <div class="author">
+          <div class="img-container">
+            <img src="img/IMG_2155.JPG" />
+          </div>
+          <span>User Interface Developer</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="user-interface-developer">
+        <div class="headline">
+          Preston Middleton
+        </div>
+        <div class="author">
+          <div class="img-container">
+            <img src="img/IMG_2151.JPG" />
+          </div>
+          <span>User Interface Developer</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="frontend-architect">
+        <div class="headline">
+          Awa Melvine
+        </div>
+        <div class="author">
+          <div class="img-container">
+            <img src="img/IMG_2152.JPG" />
+          </div>
+          <span>Frontend Architect</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="backend-architect">
+        <div class="headline">
+          Anthony Stachowiz
+        </div>
+        <div class="author">
+          <div class="img-container">
+            <img src="img/IMG_2153.JPG" />
+          </div>
+          <span>Backend Architect</span>
+        </div>
+      </div>
+
+      <footer class="footer">
+          <p>Copyright Expat Journal 2019</p>
+      </footer>
+      
+      </div>
+    </div>
   </body>
 </html>
