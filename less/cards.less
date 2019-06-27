@@ -3,14 +3,17 @@
   .width-100();
   margin-top: 16px;
   flex-wrap: wrap;
+  @media @tablet {
+    width: 650px;
+  }
   @media @mobile {
-    width: 1200px;
+    width: 400px;
   }
   .card {
     .border-bottom-grey();
     .flex(space-between, none, column);
     background-color: @white;
-    width: 1000px;
+    width: 800px;
     margin-bottom: 20px;
     padding: 50px;
     .headline {
